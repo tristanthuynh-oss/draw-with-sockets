@@ -6,9 +6,8 @@ background(51);
 
 
 //socket = io.connect('http://localhost:3000');
-
-socket.on('mouse', newDrawing);
 socket = io();
+socket.on('mouse', newDrawing);
 }
 
 function newDrawing(data) {
